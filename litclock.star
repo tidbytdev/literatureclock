@@ -14,11 +14,10 @@ load("schema.star", "schema")
 load("cache.star", "cache") # Keep cache loaded, good practice
 
 # Constants
-# NOTE: Assumes the hourly files are now in a location accessible via this base URL
-# You MUST update this URL to point to where your *clean* (no overlap) hourly files are hosted.
+# Hourly files are in the following github location accessible via this base URL becuase the entire file is unwiedly and may timeout 
 BASE_URL = "https://raw.githubusercontent.com/tidbytdev/literatureclock/main/hours/" # <<< EXAMPLE - ADJUST THIS
 
-# Schema definition for configuration (Corrected: No Headers, Grouped Names)
+# Schema definition for configuration
 def get_schema():
     # Define timezone options for the dropdown
     TIMEZONE_OPTIONS = [
