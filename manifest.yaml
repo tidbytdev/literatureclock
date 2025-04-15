@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://docs.tidbyt.com/schema/manifest-v1.json
+# Manifest for the Custom Literature Clock App
+
+id: literature-clock-custom
+name: Literature Clock Custom
+summary: Literary quotes for time
+desc: Shows quotes from literature mentioning the current time. Features configurable colors, fonts (per element: quote context, time reference, title, author), timezone, and dynamic caching with pre-fetch.
+author: TDevelop
+fileName: litclock.star
+packageName: litclock
+# Using the original Tidbyt literature clock data source as requested
+dataSource: https://raw.githubusercontent.com/tidbytdev/literatureclock/main/hours/
+# Set visibility for initial testing/personal use
+visibility: Private
